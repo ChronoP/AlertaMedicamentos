@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Cadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="252dp"
+        android:layout_height="334dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alertamedicamentos2" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="285dp"
+        android:layout_height="219dp"
+        android:layout_marginBottom="28dp"
+        android:background="#D1D1CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="30sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Digite seu email" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="80sp"
+            android:layout_marginBottom="40sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:hint="Digite sua senha" />
+
+        <Button
+            android:id="@+id/botao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95sp"
+            android:layout_marginTop="140sp"
+            android:backgroundTint="#FF1616"
+            android:text="@string/entrar"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.navigation.NavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

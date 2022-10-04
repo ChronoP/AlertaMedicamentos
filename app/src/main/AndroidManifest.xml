@@ -14,12 +14,15 @@
         android:theme="@style/Theme.AlertaMedicamentos"
         tools:targetApi="31">
         <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
+        <activity
             android:name=".Inicio"
             android:exported="false" />
         <activity
-            android:name="Cadastro"
-            android:windowSoftInputMode="adjustPan|adjustResize"
-            android:exported="false" />
+            android:name=".Cadastro"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -29,6 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".AlarmReceiver"/>
+
     </application>
 
 </manifest>
